@@ -3,7 +3,7 @@ SPIDER_MODULES = ["job.spiders"]
 NEWSPIDER_MODULE = "job.spiders"
 ROBOTSTXT_OBEY = False
 LOG_LEVEL = "WARNING"
-DOWNLOAD_DELAY = 0.5
+DOWNLOAD_DELAY = 2
 ITEM_PIPELINES = {
     'job.pipelines.JobPipeline': 300,
 }
