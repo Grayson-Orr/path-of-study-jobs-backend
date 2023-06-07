@@ -1,4 +1,5 @@
 import compression from "compression";
+import cors from "cors";
 import dotenv from "dotenv";
 import express, { urlencoded, json } from "express";
 
@@ -15,6 +16,7 @@ const PORT = process.env.PORT;
 app.use(urlencoded({ extended: false }));
 app.use(json());
 app.use(compression());
+app.use(cors());
 
 app.use(`/${BASE_URL}/${CURRENT_VERSION}/jobs`, jobs);
 
